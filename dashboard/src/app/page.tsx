@@ -73,7 +73,7 @@ export default function Home() {
         <p className="p-4 font-semibold">Overview</p>
         <BarChart />
        </CardContent>
-       <CardContent>
+       <CardContent className="flex justify-between gap-4">
         <p>Recent Sales </p>
         <p className="tetx-sm text-gray-400">You Made 260 Sales This Month</p>
        {uesrSalesData.map((d,i)=> <SalesCard key={i} email={d.email} name={d.name} saleAmount={d.saleAmount}  />)}
